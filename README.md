@@ -1,66 +1,69 @@
 create env
 
-'''bash
+```bash
 conda create -n mlops python=3.7 -y
-'''
+```
 
 activate env
 
-'''bash
+```bash
 conda activate mlops
-'''
+```
 
 created a req file
 
 install the req
 
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 
 download the data from
 
-'''bash
+```bash
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
-'''
+```
 
-'''bash
+```bash
 git init
 dvc init 
 dvc add data_given/winequality.csv
 git add .
 git commit -m "first commit"
-'''
+```
 
 oneliner updates for readme
 
-'''bash
+```bash
 git add . && git commit -m "update Readme.md"
 git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
 git branch -M main
 git push origin main
-'''
+```
 
 tox command -
 
-'''bash
+```bash
 tox
-'''
+```
 
 for rebuilding -
 
-'''bash
+```bash
 tox -r 
-'''
+```
 pytest command
-'''bash
+
+```bash
 pytest -v
-'''
+```
 setup commands -
-'''bash
+
+```bash
 pip install -e . 
-'''
+```
 build your own package commands-
-'''bash
+
+```bash
 python setup.py sdist bdist_wheel
-'''
+```
