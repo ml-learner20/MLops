@@ -1,4 +1,3 @@
-import os
 from get_data import read_params, get_data
 import argparse
 
