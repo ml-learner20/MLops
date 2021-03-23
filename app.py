@@ -3,7 +3,6 @@ import os
 import yaml
 import joblib
 import numpy as np
-from
 
 params_path = "params.yaml"
 webapp_root = "webapp"
@@ -23,6 +22,7 @@ def predict(data):
     model_dir_path = config["webapp_model_dir"]
     model = joblib.load(model_dir_path)
     prediction = model.predict(data)
+    print(data)
     print(prediction)
     return prediction[0]
 
@@ -30,7 +30,7 @@ def api_response(request):
     try:
         data = np.array([list(request.json.values())])
         response = predict(data)
-        response = {"response":response}
+        response = {"response": response}
         return response
     except Exception as e:
         print(e)
@@ -60,4 +60,4 @@ def index():
 
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="127.0.0.1", port=5000, debug=True)
