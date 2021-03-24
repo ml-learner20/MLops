@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/8fc49b2755f44b58b97ef19bfa1ec90d/artifacts
+end_time: 1616550206115
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 8fc49b2755f44b58b97ef19bfa1ec90d
+run_uuid: 8fc49b2755f44b58b97ef19bfa1ec90d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1616550205615
+status: 4
+tags: []
+user_id: Ram_2
